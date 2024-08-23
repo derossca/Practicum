@@ -14,7 +14,7 @@ public class PersonGenerator {
         Scanner in = new Scanner(System.in);
 
         File workingDirectory = new File(System.getProperty("user.dir"));
-        Path file = Paths.get(workingDirectory.getPath() + "\\src\\personTestData.txt");
+        Path file = Paths.get(workingDirectory.getPath() + "Practicum_src_personTestData.txt");
 
       /*  a. ID (a String)
         b.	FirstName
