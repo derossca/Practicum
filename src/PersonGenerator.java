@@ -14,7 +14,7 @@ public class PersonGenerator {
         Scanner in = new Scanner(System.in);
 
         File workingDirectory = new File(System.getProperty("user.dir"));
-        Path file = Paths.get(workingDirectory.getPath() + "Practicum_src_personTestData.txt");
+        Path file = Paths.get(workingDirectory.getPath() + "_src_personTestData.txt");
 
       /*  a. ID (a String)
         b.	FirstName
@@ -32,11 +32,11 @@ public class PersonGenerator {
         boolean done = false;
 
         do {
-            ID = SafeInput.getNonZeroLenString(in, "Enter the ID [6 digits]: ");
-            firstName = SafeInput.getNonZeroLenString(in, "Enter the first name: ");
-            lastName = SafeInput.getNonZeroLenString(in, "Enter the last name: ");
-            title = SafeInput.getNonZeroLenString(in, "Enter the title: ");
-            YOB = SafeInput.getRangedInt(in, "Enter the year of birth: ", 1000, 9999);
+            ID = SafeInput.getNonZeroLenString(in, "Enter the ID [6 digits]");
+            firstName = SafeInput.getNonZeroLenString(in, "Enter the first name");
+            lastName = SafeInput.getNonZeroLenString(in, "Enter the last name");
+            title = SafeInput.getNonZeroLenString(in, "Enter the title");
+            YOB = SafeInput.getRangedInt(in, "Enter the year of birth", 1000, 9999);
 
             personRec = ID + ", " + firstName + ", " + lastName + ", " + title + ", " + YOB;
             folks.add(personRec);
