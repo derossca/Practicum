@@ -40,6 +40,8 @@ public class PersonReader {
 
                 // Finally we can read the file LOL!
 
+                System.out.printf("%-8s%-10s%-10s%-6s%-6s%n", "ID#", "Firstname", "Lastname", "Title", "YOB");
+                System.out.println("=====================================");
 
                 int line = 0;
                 while (reader.ready()) {
