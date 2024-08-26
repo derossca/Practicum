@@ -14,7 +14,7 @@ public class ProductWriter {
         Scanner in = new Scanner(System.in);
 
         File workingDirectory = new File(System.getProperty("user.dir"));
-        Path file = Paths.get(workingDirectory.getPath() + "_src_productTestData.txt");
+        Path file = Paths.get(workingDirectory.getPath() + "_src_ProductTestData.txt");
 
       /*
       a.	ID (a String as before in Person)
