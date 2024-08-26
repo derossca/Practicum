@@ -40,15 +40,17 @@ public class PersonReader {
 
                 // Finally we can read the file LOL!
 
-                System.out.printf("%-8s%-10s%-10s%-6s%-6s%n", "ID#", "Firstname", "Lastname", "Title", "YOB");
-                System.out.println("=====================================");
+                System.out.printf("%-8s%-10s%-12s%-6s%-5s%n", "ID#", "Firstname", "Lastname", "Title", "YOB");
+                System.out.println("========================================");
 
                 int line = 0;
                 while (reader.ready()) {
                     rec = reader.readLine();
                     line++;
                     // echo to screen
-                    System.out.printf("\n%-60s ", rec);
+                    //splitting recs
+                    String[] folks = rec.split(", ");
+                    System.out.printf("%-8s%-10s%-12s%-6s%-5s%n", folks[0], folks[1], folks[2], folks[3], folks[4]);
                 }
                 reader.close(); // must close the file to seal it and flush buffer
                 System.out.println("\n\nData file read!");
