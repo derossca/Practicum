@@ -20,7 +20,7 @@ public class PersonReader {
             // Not sure if the toolkit is thread safe...
             File workingDirectory = new File(System.getProperty("user.dir"));
 
-            // Typiacally, we want the user to pick the file so we use a file chooser
+            // Typically, we want the user to pick the file so we use a file chooser
             // kind of ugly code to make the chooser work with NIO.
             // Because the chooser is part of Swing it should be thread safe.
             chooser.setCurrentDirectory(workingDirectory);
